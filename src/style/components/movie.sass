@@ -1,0 +1,117 @@
+@use '../variables'
+@use '../mixins'
+
+.movie-page
+    height: 100vh
+    overflow-x: hidden
+
+    .container-banner
+        .banner
+            padding: 40px
+
+            background-color: variables.$bg-movie
+
+            display: flex
+            justify-content: center
+
+            .title
+                font-size: 3rem
+
+            .rated
+                display: flex
+                justify-content: center
+                align-items: center
+
+                width: 65px
+                height: 35px
+
+                border-radius: 11px
+                border: .15rem solid
+
+                color: variables.$text-color
+
+                font-weight: 600
+
+            @include mixins.tablet
+                align-items: center
+                flex-direction: column
+                width: 100%
+
+                .title
+                    font-size: 1.8rem
+
+        .zindex
+            width: 100vw
+
+            position: relative
+
+            margin-top: -600px
+
+        .container-info
+            display: flex
+            justify-content: center
+            flex-direction: column
+            gap: 15px
+
+            width: 50%
+
+            padding: 40px
+
+            @include mixins.tablet
+
+                width: 100%
+                padding: 15px 0px
+                gap: 10px
+
+        .img-button
+            display: flex
+            flex-direction: column
+            width: 300px
+
+            button
+
+                background-color: variables.$link-color
+                border: 2px solid variables.$text-hover
+                border-radius: 0px 0px 4px 4px
+                color: variables.$text-link
+                height: 40px
+
+                font-size: 1rem
+                font-weight: 600
+
+                cursor: pointer
+
+                transition: .4s
+
+                &:hover
+                    background-color: variables.$text-link
+                    color: variables.$link-color
+                    border: 2px solid variables.$text-hover
+
+            @include mixins.tablet
+
+                align-items: center
+
+                img
+                    width: 70%
+
+                button
+                    width: 70%
+
+        .background-image
+
+            width: 100%
+            height: 600px
+
+            background-repeat: no-repeat
+            background-position: center
+
+            background-size: cover
+            fill: none
+            object-fit: cover
+
+            -webkit-mask-image: linear-gradient(to top, transparent 10%, black 100%)
+
+        .poster
+            width: 300px
+            top: 40px

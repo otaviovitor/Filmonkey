@@ -1,0 +1,22 @@
+@use 'variables'
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap')
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+
+body
+    background: linear-gradient(0deg, #151723 45%, #0e0b14 90%)
+    color: variables.$text-color
+    margin-top: 6rem
+
+a
+    text-decoration: none
+    color: variables.$text-color
+    transition: 0.5s
+
+    &:hover
+        color: variables.$text-hover

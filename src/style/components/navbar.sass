@@ -1,0 +1,135 @@
+@use '../variables'
+@use '../mixins'
+
+.navbar
+    display: flex
+    justify-content: space-around
+    width: 100%
+    height: 7rem
+    position: fixed
+    top: -0
+    background-color: variables.$bg-nav
+    z-index: 2
+
+    .nav-container
+        height: 7rem
+        display: flex
+        justify-content: space-around
+        align-items: center
+        z-index: 2
+
+        @include mixins.tablet
+            width: 100%
+            position: fixed
+            top: -0
+            background-color: variables.$bg-nav
+            z-index: 2
+
+        .icon
+            display: none
+            font-size: 1.8rem
+            color: variables.$text-hover
+            filter: drop-shadow(rgba(0, 247, 255, 0.622) 0px 0rem .7rem)
+
+            &:hover
+                color: variables.$text-hover
+                cursor: pointer
+
+            @include mixins.tablet
+                display: block
+
+    .nav
+        display: flex
+        align-items: center
+        justify-content: space-around
+        gap: 2rem
+
+        @include mixins.tablet
+            transform: translateY(-70vh)
+
+        .navigation
+            display: flex
+            gap: 20px
+
+        a
+            color: variables.$text-color
+
+            @include mixins.tablet
+                margin-bottom: 1rem
+
+            &:hover
+                color: variables.$text-hover
+                filter: drop-shadow(rgba(0, 247, 255, 0.429) 0px 0rem 1.9rem)
+
+    h2
+        a
+            font-size: 1.9rem
+            color: variables.$text-hover
+            filter: drop-shadow(rgba(0, 247, 255, 0.282) 0px 0rem 1rem)
+
+    form
+        display: flex
+        align-items: center
+        border: 2px solid variables.$text-hover
+        border-radius: 5px
+        outline-style: none
+
+        input
+            padding-left: .9rem
+            border: none
+            background-color: #45454500
+            color: variables.$text-color
+            outline: none
+
+            &::placeholder
+                color: variables.$text-color
+
+        button
+
+            padding: .9rem
+            background-color: variables.$bg-nav
+
+            border: none
+            border-radius: 4px
+            color: variables.$text-hover
+
+            outline: none
+
+            cursor: pointer
+
+            transition: .4s
+
+            &:hover
+
+                background-color: variables.$text-link
+                color: variables.$link-color
+
+.navbar.active
+    @include mixins.tablet
+
+    .nav.active
+        @include mixins.tablet
+            transform: translateY(0px)
+            display: inline-block
+            transition: 250ms
+            margin-top: 7rem
+            height: 100vh
+            width: 100%
+            background-color: variables.$bg-nav
+
+            form
+                margin-top: 1rem
+                justify-content: space-between
+                margin-inline: 20px
+
+                input
+                    width: 100%
+
+        .navigation
+            @include mixins.tablet
+                display: flex
+                flex-direction: column
+                padding: 20px
+
+                a
+                    margin-bottom: 1rem

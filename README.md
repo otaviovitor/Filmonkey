@@ -14,6 +14,4 @@
 
 ![screencapture-127-0-0-1-5173-movie-616037-2022-09-29-10_42_10](https://user-images.githubusercontent.com/100380799/193068487-00420a4a-7d0a-4072-b7bc-fa932956a502.png)
 
-![screencapture-127-0-0-1-5173-movie-760161-2022-09-29-10_43_17](https://user-images.githubusercontent.com/100380799/193068513-9cdad63d-3a9f-4588-977d-5a440dbb190a.png), ![Captura de tela 2022-09-29 121056](https://user-images.githubusercontent.com/100380799/193069768-25887785-2892-416f-877c-00da3fb8be3b.png)
-
-
+![screencapture-127-0-0-1-5173-movie-760161-2022-09-29-12_13_02](https://user-images.githubusercontent.com/100380799/193070608-ce24d682-dfb1-4d8f-90d9-849997c68dcd.png) ![Captura de tela 2022-09-29 121056](https://user-images.githubusercontent.com/100380799/193070640-e7639d85-6460-4b42-8353-25cb0eb90277.png)
